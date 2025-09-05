@@ -76,6 +76,9 @@ print(result)
 results = processor.process_folder("ids_folder/")  
 print(results)  
 
+
+## Project Structure
+
 ```
 EgyptianID-OCR/
 │── notebooks/
