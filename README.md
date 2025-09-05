@@ -86,12 +86,12 @@ print(results)
 ```
 EgyptianID-OCR/
 │── notebooks/
-│ └── final/ # Final pipeline class
-│ └── runs/detect/train10/ # YOLO best model
-│── output/ # JSON results
-│── data/ # Raw and augmented dataset
-│── models/ # CNN architectures
-│── ocr.yml # Conda environment file
+│ └── final/                  # Final pipeline class
+│ └── runs/detect/train10/    # YOLO best model
+│── output/                   # JSON results
+│── data/                     # Raw and augmented dataset
+│── models/                   # CNN architectures
+│── ocr.yml                   # Conda environment file
 │── README.md
 
 ```
