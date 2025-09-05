@@ -55,22 +55,27 @@ The system uses **YOLO** for object detection and custom **CNN models** for clas
 
 ---
 
-## Example Usage  
+## Usage Example  
 
 ```python
-from final.pipeline import IDProcessor
+from final.model import IDCardProcessor  
 
-processor = IDProcessor()
+# Initialize processor  
+processor = IDCardProcessor(  
+    yolo_model_path="../runs/detect/train10/weights/best.pt",  
+    gender_model_path="../models/cnn_model_gender_2.keras",  
+    religion_model_path="../models/cnn_model_religion_2.keras",  
+    marital_model_path="../models/cnn_model_marital_status_2.keras",  
+)  
 
-# Single image
-processor.process_card("sample_id.jpg")
+# Process single ID card  
+result = processor.process_id_card("sample_id.jpg")  
+print(result)  
 
-# Folder of images
-processor.process_folder("ids_folder/")
+# Process folder of ID cards  
+results = processor.process_folder("ids_folder/")  
+print(results)  
 
-Results will be saved in the output/ folder as JSON.
-
-Repository Structure
 ```
 EgyptianID-OCR/
 │── notebooks/
