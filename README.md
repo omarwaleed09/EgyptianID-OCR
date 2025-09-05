@@ -77,9 +77,10 @@ results = processor.process_folder("ids_folder/")
 print(results)  
 
 
-## Project Structure
 
-```
+
+```## Project Structure
+
 EgyptianID-OCR/
 │── notebooks/
 │ └── final/ <sub><i>Final pipeline class</i></sub>
