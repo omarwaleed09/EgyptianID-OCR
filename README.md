@@ -26,7 +26,7 @@ The system uses **YOLO** for object detection and custom **CNN models** for clas
 - Edited synthetic cards with the same font to expand dataset  
 - Applied augmentation to increase dataset size  
 
-### 2. Annotation  
+### 2. Annotation Using VOTT
 - Annotated selected samples for three fields: gender, religion, marital status  
 - Used annotated + unannotated data to train YOLO  
 
